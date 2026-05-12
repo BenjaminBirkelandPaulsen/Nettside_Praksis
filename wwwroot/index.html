@@ -7,19 +7,30 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-50 text-slate-900">
-    <nav class="mx-auto bg-white text-slate-900 shadow-lg border-b border-slate-300">
-        <div class="mx-auto flex max-w-7xl items-center justify-between px-2 py-3">
+    <nav class="sticky top-0 z-50 w-full bg-white text-slate-900 shadow-lg border-b border-slate-200">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
             <span class="text-lg font-semibold">Nettside Praksis</span>
-            <a href="/" class="rounded px-3 py-2 text-sm font-medium hover:bg-slate-700 hover:text-white">Om meg</a>
+            <a href="/" class="rounded px-3 py-2 text-sm font-medium hover:bg-slate-900">Om meg</a>
         </div>
     </nav>
 
     <main class="mx-auto max-w-7xl px-4 py-8">
         <h1 class="mb-4 text-3xl font-bold">Velkommen</h1>
-        <p class="mb-6 text-slate-700">Nettside slik at jeg kan få praksisplass høsten 2026</p>
+        <p class="mb-6 text-slate-700">Hei. Mitt navn er Benjamin Birkeland Paulsen og jeg er en student ved UiA som ønsker praksisplass. Jeg har tatt IT relaterte fag i 6 år og på den tiden har jeg lært følgene: Python med og uten web, C# med og uten web, HTML, CSS, SQL, docker, litt linux, containerisering og virtualisering</p>
 
-        <div class="mb-8 flex items-center gap-4 rounded-lg border border-slate-200 bg-white p-4 shadow">
-            <img src="https://media.licdn.com/dms/image/C4D03AQFEXAMPLE/profile-displayphoto-shrink_200_200/0/1517351234567?e=2147483647&v=beta&t=EXAMPLE"
+        <div class="mb-8 overflow-hidden rounded-xl bg-black shadow-lg">
+            <video class="w-full" controls>
+                <source src="Videos/Praksisplass.mp4" type="video/mp4">
+                Nettleseren din støtter ikke video-taggen.
+            </video>
+        </div>
+        
+        <div>
+
+        </div>
+
+        <div class="mx-auto max-w-xs mb-8 flex items-center gap-4 rounded-lg border border-slate-200 bg-white p-4 shadow">
+            <img src="https://media.licdn.com/dms/image/v2/D4E03AQF0pYvB7kkXTw/profile-displayphoto-scale_400_400/B4EZ4cTh3nIAAo-/0/1778591343533?e=1779926400&v=beta&t=xynulGtMSxu__TtEWCINWIg_Yi9DdnFJgxBEcvdb9_U"
                  alt="LinkedIn Profile Photo"
                  class="h-16 w-16 rounded-full border border-slate-300 object-cover" />
             <div>
@@ -33,13 +44,6 @@
                     Se LinkedIn-profil
                 </a>
             </div>
-        </div>
-
-        <div class="overflow-hidden rounded-xl bg-black shadow-lg">
-            <video class="w-full" controls>
-                <source src="Videos/Praksisplass.mp4" type="video/mp4">
-                Nettleseren din støtter ikke video-taggen.
-            </video>
         </div>
     </main>
 </body>
