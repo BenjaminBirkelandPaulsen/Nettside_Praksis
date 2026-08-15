@@ -1,50 +1,80 @@
+index.html
 <!DOCTYPE html>
-<html lang="no">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nettside Praksis</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>My GitHub Pages Site</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .links {
+            margin-top: 30px;
+        }
+
+        a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 24px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+            a:hover {
+                background: #764ba2;
+            }
+    </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
-    <nav class="sticky top-0 z-50 w-full bg-white text-slate-900 shadow-lg border-b border-slate-200">
-        <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
-            <span class="text-lg font-semibold">Nettside Praksis</span>
-            <a href="/" class="rounded px-3 py-2 text-sm font-medium hover:bg-slate-900">Om meg</a>
-        </div>
-    </nav>
+<body>
+    <div class="container">
+        <h1>Welcome! 👋</h1>
+        <p>This is a simple GitHub Pages site.</p>
+        <p>You can customize this page by editing <code>index.html</code>.</p>
 
-    <main class="mx-auto max-w-7xl px-4 py-8">
-        <h1 class="mb-4 text-3xl font-bold">Om meg</h1>
-        <p class="mb-6 text-slate-700">Hei. Mitt navn er Benjamin Birkeland Paulsen og jeg er en student ved UiA som ønsker praksisplass. Jeg har tatt IT-relaterte fag i 6 år. Jeg har erfaring med Python og C# (både for web og frittstående applikasjoner), HTML og CSS. I tillegg har jeg jobbet med SQL-databaser i MySQL Workbench og PostgreSQL. Jeg har også kunnskap om containerisering i Docker, og virtualisering i VirtualBox. I tilleg til dette har jeg grunnleggende Linux kunnskaper</p>
-
-        <div class="mb-8 overflow-hidden rounded-xl bg-black shadow-lg">
-            <video class="w-full" controls>
-                <source src="Videos/Praksisplass.mp4" type="video/mp4">
-                Nettleseren din støtter ikke video-taggen.
-            </video>
+        <div class="links">
+            <a href="https://github.com">GitHub</a>
+            <a href="https://pages.github.com">GitHub Pages</a>
         </div>
-        
-        <div>
-
-        </div>
-
-        <div class="mx-auto max-w-xs mb-8 flex items-center gap-4 rounded-lg border border-slate-200 bg-white p-4 shadow">
-            <img src="https://media.licdn.com/dms/image/v2/D4E03AQF0pYvB7kkXTw/profile-displayphoto-scale_400_400/B4EZ4cTh3nIAAo-/0/1778591343533?e=1779926400&v=beta&t=xynulGtMSxu__TtEWCINWIg_Yi9DdnFJgxBEcvdb9_U"
-                 alt="LinkedIn Profile Photo"
-                 class="h-16 w-16 rounded-full border border-slate-300 object-cover" />
-            <div>
-                <div class="text-lg font-semibold">Benjamin Birkeland Paulsen</div>
-                <div class="text-slate-600">Student ved UiA</div>
-                <a href="https://www.linkedin.com/in/benjamin-birkeland-paulsen-82a363254/" target="_blank" rel="noopener noreferrer"
-                   class="mt-1 inline-flex items-center gap-1 text-blue-700 hover:text-blue-900 font-medium underline">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm15.5 11.268h-3v-5.604c0-1.337-.026-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.601v5.595z" />
-                    </svg>
-                    Se LinkedIn-profil
-                </a>
-            </div>
-        </div>
-    </main>
+    </div>
 </body>
 </html>
